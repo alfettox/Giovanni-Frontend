@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="descritpion" content="This is a basketball score panel">
+    <meta content="keywords" content="basketball, score, panel, game, score panel, html, css, javascript">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball score panel</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div id="container">
+        <div id="title">        Virtual basketball score panel
+        </div>
+        <div id="main">
+            <div class="team-div">
+                <div id="team1name">
+                    <h1>Team 1</h1>
+                </div>
+                <h2 id="team1score">0</h2>
+                <div id="team1buttonset">
+                    <button id="team1button1" onclick="addTo1(1)">+1</button>
+                    <button id="team1button2" onclick="addTo1(2)">+2</button>
+                    <button id="team1button3" onclick="addTo1(3)">+3</button>
+                </div>
+            </div>
+            <span>
+         <img src="./images/basket.png" alt="basketball icon" id="ball"
+                    width="50px" height="50px"></pre>
+            </span>
+
+            <div class="team-div">
+                <div id="team2name">
+                    <h1>Team 2</h1>
+                </div>
+                <h2 id="team2score">0</h2>
+
+                <div id="team2buttonset">
+                    <button id="team2button1" onclick="addTo2(1)">+1</button>
+                    <button id="team2button2" onclick="addTo2(2)">+2</button>
+                    <button id="team2button3" onclick="addTo2(3)">+3</button>
+                </div>
+            </div>
+
+
+            <button id="reset-button" onclick="reset()">Reset</button>
+            <div id="winner">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

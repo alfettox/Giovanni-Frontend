@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+
+#title {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    text-shadow: #000000 0px 3px 5px;
+    padding:0px;
+    margin-top:1em;
+
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    /* background-color: #90bfde; */
+    
+}
+
+#main span{
+    margin:0px;
+    padding:0px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: #90bfde;
+    background-image: url(../images/basketballcourt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin:0px;
+    padding:0px;
+}
+
+.team-div {
+
+    width: 20%;
+    background-color: #000000;
+    padding: .5rem 0rem;
+    text-align: center;
+    margin: 1em;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 2em;
+    border: white solid 5px;
+}
+
+.team-div h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: yellowgreen;
+    margin-bottom: 1em;
+}
+
+.team-div h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: yellowgreen;
+    font-size: 2.5em;
+    margin-bottom: .3em;
+}
+
+button {
+    background-color: #90bfde;
+    border-color: white;
+    border-radius: 1em;
+    border-style: dotted;
+    padding: 2px;
+    color: white;
+    font-size: 1.3em;
+}
+
+#reset-button {
+    padding: .5em;
+    /* margin-bottom: .2em; */
+    font-weight: bolder;
+    margin-left: 100%;
+    margin-right: 100%;
+    font-size: 1.3em;
+    height: auto;
+}
+
+#winner {
+    font-weight: bolder;
+    font-size: 1.8em;
+    margin-top: .4em;
+    font-family: 'Press Start 2P', cursive;
+    color: yellowgreen;
+    text-shadow: #000000 10px 10px 10px;
+    text-decoration: double;
+}
+
+@keyframes jump {
+    0% {
+      transform: translateY(30vh);
+        box-shadow: #000000 00px 5px 10px;
+    }
+    5%{
+
+    }
+    60% {
+        transform: translateY(10vh);
+                box-shadow: #000000 00px 00px 10px;
+      }
+      95%{
+        box-shadow: #000000 00px 5px 10px;
+
+    }
+    100% {
+      transform: translateY(30vh);
+      box-shadow: #000000 00px 05px 10px;
+    }
+  }
+  
+  #ball {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    animation: jump 3s infinite;
+  }
+  
