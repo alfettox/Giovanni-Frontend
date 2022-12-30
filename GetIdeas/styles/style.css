@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 250px;
+}
+
+body {
+    font-family: 'Permanent Marker', cursive;
+    background: #2b5876;
+    color:white;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4e4376, #2b5876);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+
+}
+
+body h1{
+    color: white;
+    text-shadow: white 0px 0px 2px;
+
+}
+
+
+body h2{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: .7em;
+    color:white;
+}
+
+button{
+    background-color: violet;
+    border: none;
+    padding:15px;
+    width:250px;
+    border-end-end-radius: 10px;
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size:large;
+    cursor: pointer;
+    font-weight: 600;;
+
+}
+
+button:hover{
+    box-shadow: 5px 5px 5px 5px  rgba(0, 0, 0, 0.2);
+    color:black;
+}
+
+#new-idea{
+    margin-top:1em;
+    text-align:center;
+    padding: .3rem;
+    text-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.2);
+}
+
+#ideas{
+    color:rgb(176, 255, 5);
+    font-size:1.2em;
+}
+
+
+.line{
+    background-color: violet;
+    width: 250px;
+}
+
+/* .line:hover{
+    box-shadow: 5px 5px 5px 5px  rgba(0, 0, 0, 0.2);
+} */
