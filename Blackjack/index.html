@@ -1,23 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta description="Blackjack">
-    <meta name="Giovanni De Franceschi" content="Black Jack">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="blackjack.js"></script>
-    <title>Blackjack</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet"></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
 <body>
+    <h1>Blackjack</h1>
     <div id="container">
-        <h1 id="title"> Blackjack game</h1>
-
-
-
-
+        <p id="message-el">Want to play a round?</p>
+        <p id="cards-el">Cards:</p>
+        <p id="sum-el">Sum:</p>
+        <button class="button" onclick="startGame()">NEW GAME</button>
+        <button class="button new" onclick="newCard()">NEW CARD</button>
+        <p id="player-el"></p>
     </div>
+    <script src="index.js"></script>
+
+    <footer> Background image by Lukas (https://www.pexels.com/@goumbik/) from Pexels</footer>
 </body>
+
 </html>
