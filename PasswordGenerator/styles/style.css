@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    background-color: #17212e;
+
+}
+
+#main-block {
+
+    text-align: center;
+    margin: auto;
+    background-color: #273549;
+    padding: 2em;
+    max-width: 50%;
+    border-radius: 20px;
+    margin:5em;
+    box-shadow: 00px 0px 10px #0b0f15;
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+}
+
+h2 {
+    color: #4ADF86;
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+
+h3 {
+    color: #D5D4D8;
+    font-size: 1em;
+}
+
+
+
+form {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #17212e;
+    margin: auto;
+    border-radius: 15px;
+    width: auto;
+    max-width: 100%;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+    padding: 1em 1em;
+}
+
+label{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type="checkbox"] {
+    margin: 0 2em 0 2em;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #4ADF86;
+    border:none;
+}
+
+output{
+    color: #4ADF86;
+    font-weight: bold;
+    margin-left: .5em;
+}
+
+.slider {
+    background-color: #4ADF86;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+
+.slider:hover{
+    opacity: 0.1;
+    transition: opacity .2s;
+}
+
+
+hr {
+    margin-bottom: 2em;
+    line-height: 1px;
+    height: 1px;
+    border: 1px solid #2F3E53;
+    background-color: #2F3E53;
+    box-shadow: 2px 0px 2px #1c222b;
+}
+
+
+.passwords {
+    background-color: #1c222b;
+    display: inline-block;
+    min-width: 14vw;
+    min-height: 4vh;
+    border-radius: 6px;
+    padding: 6px;
+    margin: 6px;
+    color: #55F991;
+    font-weight: bold;
+    max-width: 80%;
+}
+
+button {
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+    background-color: #10B981;
+    padding: 1em;
+    margin: 2em;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 3em;
+}
+
+button:active{
+    background-color: #15342a;
+
+}

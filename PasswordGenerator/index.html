@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="description" content="Password Generator">
+    <meta content="keywords" content="Password, Generator, Password Generator">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" type="module"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="main-block">
+            <h1> Password generator</h1>
+            <h2> Generate a random password</h2>
+            <h3> Never use an unsecure password!</h3>
+
+            <button type="button" id="generator-btn" )>Generate new password</button>
+
+            <div id="charactistics">
+                <div id="password-length"></div>
+                <form>
+                    <label for="letters">Letters</label>
+                    <input type="checkbox" class="checkbox" id="letters" name="letters" value="letters" checked>
+                    <laber for="numbers">+numbers</laber>
+                    <input type="checkbox" class="checkbox" id="numbers" name="numbers" value="numbers">
+                    <label for="symbols">+symbols</label>
+                    <input type="checkbox" class="checkbox" id="symbols" name="symbols" value="symbold">
+                </form>
+                <p>
+                    <input type="range" id="range-lenght" min="1" max="10" value="10"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output id="range-lenght">10</output>
+                </p>
+            </div>
+            <hr>
+            <div>
+                <span id="password1" class="passwords">Password 1</span>
+                <span id="password2" class="passwords">Password 2</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
