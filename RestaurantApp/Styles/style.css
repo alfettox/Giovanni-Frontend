@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rationale&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Rationale', sans-serif;
+}
+
+html{
+    color: white;
+    background-color:rgb(24, 24, 24);
+}
+
+#container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+header{
+    background-image: url("images/hero.png");
+    background-size: cover;
+    margin: 1em 0;
+}
+
+.food-div{
+    background-color:rgb(42, 42, 42);
+    padding:1em;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1.2em;
+    width: 40vw;
+}
+
+hr{
+    margin: 1em 0em;
+    border:none;
+    border-bottom: 1px solid rgb(42, 42, 42);
+    width: 40vw;
+}
+
+.food-button{
+    border-radius: 50%;
+    width:30px;
+    height:30px;
+    color:black;
+    font-size:1.2em;
+    margin:0;
+    padding:0;
+}
+
+#card-details{
+    color:white;
+    background-color: brown;
+    padding:2em;
+    display:grid;
+    position:fixed;
+    margin: auto;
+    min-width:40vw;
+    min-height: 40vh;
+    max-width: 60vw;
+    justify-content: right;
+    flex-direction: column;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.3);
+    z-index: 10;
+}
+
+#card-details form{
+    border: 1px solid rgb(238, 143, 143);
+    border-radius: 5px;
+    padding:1em;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.pay-button{
+    background-color:rgb(207, 113, 113);
+    color:white;
+    border:none;
+    border-radius: 5px;
+    padding:0.5em;
+    margin:0.5em;
+    font-size:1.2em;
+    z-index: 2;
+    padding:.5em;
+    margin-top:2em;
+}
+
+.pay-button:active{
+    background-color:rgb(136, 66, 66);
+}
+
+.grid{
+    display:flex;
+}
+
+input[type="text"], input[type="password"]{
+    border: 1px solid rgb(238, 143, 143);
+    border-radius: 5px;
+    padding:0.5em;
+    margin:0.5em;
+    height:1em;
+    font-size:1.2em;
+    z-index: 2;
+    padding:.5em;
+}
+
+.close-button{
+    background-color: transparent;
+    color:white;
+    border:none;
+    cursor: pointer;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="Restaurant ordering app">
+    <meta name="keywords" content="app restaurant ordering javascript html css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" type="module"></script>
+    <title>Restaurant FastApp</title>
+</head>
+<div id="container">
+    <header>
+        <h1>Restaurant FastApp</h1>
+    </header>
+
+    <body>
+        <div id="card-details">
+            <button class="close-button">X
+            </button>
+        </div>
+</div>
+<div>
+    <h3>Enter card details</h3>
+    <form class="grid">
+        <label class="grid-item" for="cust-name">Name on card</label>
+        <input class="grid-item" type="text" id="cust-name" placeholder="Name on card" required><br>
+        <label class="grid-item" for="card-number">Card number</label>
+        <input class="grid-item" type="text" id="card-number" placeholder="Card number required"><br>
+        <label class="grid-item" for="card-expiry">Expiry date</label>
+        <input class="grid-item" type="text" id="card-expiry" placeholder="Expiry date" required><br>
+        <label class="grid-item" for="ccv">CCV</label>
+        <input class="grid-item" type="password" id="ccv" placeholder="CCV">
+    </form>
+</div>
+<div id="list-element">
+</div>
+<button class="pay-button" id="pay-button">PAY</button>
+<hr>
+</body>
+<footer>
+    Restaurant FastApp (c) 2022
+</footer>
+</div>
+
+</html>
