@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Rationale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Rationale&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "give you glory", sans-serif;
+}
+
+a {
+    color: red;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 1.2em;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #60afc6;
+    color: white;
+    background-image: url(../images/Background.jpg);
+    background-size: cover;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Courgette', cursive;
+}
+
+button {
+    width: 4em;
+    height: 2em;
+    border-radius: 5px;
+    border: solid 1px #437e90;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    color: white;
+    grid-area: nav;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px auto 100px;
+    grid-template-areas:
+        "header header header"
+        "sidebar content1 content1"
+        "sidebar content2 content2"
+        "sidebar content3 content3"
+        "footer footer footer";
+    gap:4px;
+    text-align:center;
+    font-size:3em;
+    height:100vh;
+}
+
+main img {
+    border: solid 5px white;
+    box-shadow: 0px 3px rgba(0, 0, 0, .3);
+    grid-area: content;
+}
+
+.header {
+    background-color: rgb(126, 149, 149);
+    grid-area:header;
+
+}
+
+.content1{
+    background-color: blueviolet;
+    grid-area:content1;
+}
+
+.content2{
+    background-color: rgb(165, 107, 218);
+    grid-area:content2;
+}
+
+.content3{
+    background-color: rgb(190, 163, 216);
+    grid-area:content3;
+}
+
+.footer {
+    background-color: red;
+    grid-area:footer;
+    height: 10vh;
+    align-self: end;
+}
+
+.sidebar {
+    background-color: yellowgreen;
+    grid-area:sidebar;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        justify-content: center;
+      grid-template-columns: 1fr minmax(50px, 300px) 1fr;
+      grid-template-rows: 200px auto auto 100px;
+      grid-template-areas: 
+        "....... header ......"
+        "sidebar sidebar sidebar"
+        "content1 content1 content1"
+        "content2 content2 content2"
+        "content3 content3 content3"
+        "footer footer footer";
+    }
+  }
