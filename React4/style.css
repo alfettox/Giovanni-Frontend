@@ -1,0 +1,39 @@
+html, body{
+    box-sizing: border-box;
+    margin:0;
+}
+
+h1{
+    color:rgb(183,183,182);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .05em;
+    margin:1rem;
+}
+
+.nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: 10px 0 15px rgba(150,150,150,.2);
+}
+
+.nav-logo {
+    width: 60px;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items > li {
+    padding: 10px;
+}
+
+.footer {
+    background-color:lightblue;
+    margin:0;
+    width:100wv;
+    color:white
+    
+}
