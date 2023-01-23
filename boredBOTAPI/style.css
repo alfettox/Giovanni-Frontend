@@ -1,0 +1,45 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html, body{
+    margin:0;
+    padding:0;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+#container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-self: center; 
+    vertical-align: middle;
+}
+
+h1{
+    font-size:4rem;
+}
+
+input[type="button"]{
+    width:200px;
+}
+
+.parent{
+    background-color:lightskyblue;
+    margin:1rem;
+    height: 30rem;
+    width: 30rem;
+
+}
+
+.child{
+    transition: transform 1s cubic-bezier(0.48, 2.04, 0.57, 0.31); /* this line apply a transition between the 2 states,if transform is specified the color change immediatly*/
+    background-color: red;
+    height: 15rem;
+    width: 15rem;
+}
+
+.parent:hover .child{
+    transform: translateX(100%);
+    background-color: green;
+}
+
