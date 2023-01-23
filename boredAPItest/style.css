@@ -1,0 +1,20 @@
+html,
+body {
+    font-family: sans-serif;
+}
+
+input[type=range] {
+    width: 100%;
+    height: 5px;
+    background: url('./line.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: url('./ball.png') no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}

@@ -1,0 +1,78 @@
+html{
+  background-color: black;
+}
+
+@keyframes moveUp {
+  from {transform: translateY(0);}
+  to {transform: translateY(-50%);}
+}
+
+.layer1 {
+  animation: moveUp 1s ease-in-out;
+}
+
+@keyframes moveDown {
+  from {transform: translateY(0);}
+  to {transform: translateY(50%);}
+}
+
+.layer2 {
+  animation: moveDown 1s ease-in-out;
+}
+
+@keyframes moveRight {
+  from {transform: translateX(0);}
+  to {transform: translateX(50%);}
+}
+
+.layer3 {
+  animation: moveRight 1s ease-in-out;
+}
+
+
+/* #parallax-container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-color: antiquewhite;
+}
+
+.parallax-layer1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.8);
+  transition: transform 0.5s;
+}
+
+.parallax-layer2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.8);
+  transition: transform 0.5s;
+}
+
+.parallax-layer3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.8);
+  transition: transform 0.5s;
+}
+
+#parallax-container:hover .parallax-layer1 {
+  transform: scale(1.2) translateX(+50%) translateY(50%);
+}
+
+#parallax-container:hover .parallax-layer2 {
+  transform: scale(1.2) translateX(-5%) translateY(2%);
+}
+ */

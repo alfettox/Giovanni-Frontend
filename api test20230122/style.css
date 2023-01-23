@@ -1,0 +1,88 @@
+  @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+
+html, body{
+    margin:0;
+    padding:0;
+    font-family: 'Courgette', cursive;
+    font-size:1.2em;
+/* font-family: 'Source Sans Pro', sans-serif; */
+    background-color: rgb(41, 42, 42);
+    color:white;
+}
+
+h1{
+    margin:0;
+    padding:3rem;
+}
+
+.parallax {
+    background-image: url("https://images.unsplash.com/photo-1674072311078-35d03d1104be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#images-grid{
+    margin: 0 2rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax( 20rem, 1fr));
+    margin-left:20vw;
+}
+
+#random-image{
+    border-radius:50%;
+    width:140px;
+    height:140px;
+    margin: auto auto;
+    border: solid 4px white;
+    filter: drop-shadow(-3px -5px 0 white)
+        drop-shadow(-2px 2px 0 white)
+        drop-shadow(2px -2px 0 white)
+        drop-shadow(-2px -2px 0 white);
+}
+
+#random-image:hover{
+
+    filter: drop-shadow(3px 5px 0 white)
+    drop-shadow(2px 2px 0 white)
+    drop-shadow(2px 2px 0 white)
+    drop-shadow(-2px 12px 0 white);
+}
+
+.card{
+
+    text-align: center;
+    border-radius:15px;
+    background-color: yellowgreen;
+    box-shadow: 5px 5px 0 white;
+    padding:1rem;
+    margin-bottom:5rem;
+}
+
+.card:hover{
+    transition: transform 0.5s, background-color 1s;
+}
+
+button{
+    border:none;
+    border-radius:5px;
+    color: yellowgreen;
+    background-color: white;
+}
+
+button:hover{
+    box-shadow: 0 -1px black;
+    transform: translateY(-3px);
+    text-shadow: 0 -1px black;
+}
+
+button:active{
+    box-shadow: 0 -1px black;
+    text-shadow: 0 -1px black;
+    background-color: red;
+    color:white;
+}

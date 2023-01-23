@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interior Room</title>
+    <link rel="stylesheet" type="text/css" href="./threeStyle.css">
+  </head>
+  <body>
+    <div id="room"></div>
+    <script src="./threeMy.js"></script>
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@<version>/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@<version>/examples/jsm/"
+    }
+  }
+</script>
+
+<script type="module">
+
+  import * as THREE from 'three';
+  import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+  const controls = new OrbitControls( camera, renderer.domElement );
+
+</script>
+  </body>
+</html>

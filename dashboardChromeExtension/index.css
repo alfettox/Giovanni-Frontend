@@ -8,9 +8,6 @@
 body {
     margin: 0;
     background: no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -19,11 +16,20 @@ body {
 
 main {
     padding: 15px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: .3fr .3fr .3fr;
+    grid-template-areas: "top" "" ""
+                         "" "time" "weather"
+                         "video" "video" "video";
+}
+
+#top{
+    column-span:all;
+}
+
+#time{
+    column-span:all;
 }
 
 div.top {
@@ -31,7 +37,7 @@ div.top {
     justify-content: space-between;
 }
 
-h1.time {
+#time {
     text-align: center;
     font-size:3em;
     font-family: 'Press Start 2P', cursive;
@@ -87,4 +93,9 @@ i{
     color: #f80000; /* red */
     font-size: 20px;
     cursor: pointer;   
+}
+
+#converter{
+    border: solid 2px black;
+    background-color: rgba(0,0,0,.5);
 }
