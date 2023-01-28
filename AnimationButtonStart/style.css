@@ -1,0 +1,15 @@
+.classname:hover {
+    -webkit-animation-name: cssAnimation ;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: ease;
+
+  }
+  
+  @keyframes cssAnimation {
+    0% {
+      transform: translate(100%);
+    }
+    100% {
+      transform: translate(100%);
+    }
+  }

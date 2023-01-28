@@ -1,0 +1,107 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+html, body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:white;
+    font-family: sans-serif;
+
+}
+
+h1{
+    font-size:2.5rem;
+}
+
+form{
+    border-radius:5px;
+    background-color: #2E2E2F;
+    text-align: center;
+    width: 15rem;
+}
+
+
+#container{
+    background-color: #0E0E0E ;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    
+    
+}
+
+#movie-icon {
+    margin:3rem;
+}
+
+#main-block{
+    background-color: #0E0E0E ;
+    height: 84vh;
+}
+
+form{
+    position:relative;
+    top:10px;
+
+}
+
+header{
+        background-image: url("../images/bakground_image.jpg");
+        /* filter:invert(); */
+        /* opacity:0.2; */
+        width:100%;
+        text-align:center;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height:16vh;
+        
+}
+
+input[type="text"]{
+    background-color: transparent;
+    color: #9CA3AF;
+    padding: .3rem;
+    border-radius: 5px;
+    border: solid 2px;
+    border:none;
+}
+
+
+button {
+    color:white;
+    background-color:#4B4B4B;
+    border:none;
+    padding:.3rem;
+    border-radius:5px;
+    width:70px;
+}
+
+#empty-tag{
+    vertical-align:middle;
+    text-align:center;
+}
+
+.input-field { 
+    font-family: FontAwesome;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-left: 5px;
+    padding-top: 2px;
+    width: 155px;
+
+}
+
+.input-field:focus{
+    border:solid 3px red;
+    width:9rem;
+}
+    
+.input-text{
+    font-family: sans-serif;
+}

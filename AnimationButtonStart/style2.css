@@ -1,0 +1,63 @@
+#button{
+    background-color: blueviolet;
+    width:100rem;
+    color: white;
+}
+
+.blue-background {
+    background-color: rgb(225, 225, 225);
+    height: 1.5rem;
+    width:6rem;
+    border-radius: 50px;
+    border: solid 1px rgb(217, 217, 217);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2), inset -5px -5px 10px #fff;
+}
+
+.red-background {
+    background-color: rgb(72, 34, 34);
+    height: 1.5rem;
+    width:1.5rem;
+    border-radius: 50%;
+    border: solid 3px white;
+    box-shadow: inset 5px 5px 10px rgba(255, 255, 255,.2), inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+
+}
+
+.move {
+    animation: move 1s ease-in-out;
+    -webkit-animation-name: cssAnimation ;
+    animation-fill-mode: forwards;
+}
+
+.moveBack{
+    animation: move 1s ease-in-out;
+    -webkit-animation-name: cssAnimationBack ;
+    /* animation-fill-mode: forwards;  */
+}
+
+@keyframes cssAnimation {
+    from {
+        transform: translateX(0);
+        background-color: red;
+    }
+
+    to {
+        transform: translateX(230%);
+        background-color: green;
+    }
+}
+
+@keyframes cssAnimationBack {
+    from {
+        transform: translateX(230%);
+        background-color: lightgreen;
+        box-shadow: 0 0 50px lightgreen;
+    }
+
+    to {
+        transform: translateX(000%);
+        background-color: red;
+        
+    }
+}
